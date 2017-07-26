@@ -1,4 +1,4 @@
-![picture alt](http://i.imgur.com/dCcdbnQ.png "Logo")
+![picture alt](http://i.imgur.com/6C2bpIE.png "Logo")
 
 
 
