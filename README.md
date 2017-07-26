@@ -38,3 +38,6 @@ If you'd like to help me just write a critical review on addons.mozilla.org or e
 
 **How can I get in contact?**<br />
 You can just write a mail to help.flosommerfeld@gmail.com or get in contact with me at the review section.
+<br />
+<br />
+Current version: 1.2.4
