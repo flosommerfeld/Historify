@@ -11,11 +11,11 @@
 * [Install Historify](https://addons.mozilla.org/de/firefox/addon/historify/)
 * [Learn to develop WebExtensions](https://developer.mozilla.org/de/Add-ons/WebExtensions)
 
-
+- - - -
 
 ### Frequently asked questions ###
 
-Will the screenshots eat up my hard drive space?
+**Will the screenshots eat up my hard drive space?**
 Good question! Every screenshot gets compressed to reduce their cost of storage. Even though one screenshot might not need that much space, thousands for example will require much more space in comparison to one. Thousands of screenshots probably would go near the 100 MB mark. If you're concerned about your space, Historify has a autocleaner function which will only allow a userdefined maximum to be stored.
 
 Will you add functionalities from user requests?
