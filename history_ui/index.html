@@ -1,0 +1,319 @@
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="shortcut icon" href="../icons/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="../icons/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Historify</title>
+  <style>
+    @media (max-width: 1150px) {
+      .side-button div {
+        display: none;
+      }
+      .button .side-button {
+        justify-content: center;
+        padding-left: 0;
+        margin-left: 0 auto;
+        border-left-style: hidden;
+      }
+
+      .button .side-button:hover {
+        border-left-style: hidden;
+      }
+      .active {
+        border-left-style: hidden;
+      }
+      .active:hover {
+        border-left-style: hidden;
+      }
+    }
+
+
+    html {
+      overflow-y: scroll;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      min-height: 100vh;
+      flex-direction: column;
+      margin: 0;
+      font: message-box;
+      color: rgb(92, 92, 92);
+      background-color: #f9f9f9;
+      font-size: 13px;
+      line-height: 20px;
+    }
+
+    #main {
+      display: flex;
+      flex: 1;
+    }
+
+    #main>#items {
+      flex: 1;
+    }
+
+    #main>nav {
+      overflow: hidden;
+      flex: 0 0 14.25vw;
+      order: -1;
+      background-color: #424f5a;
+    }
+
+    .nav-wrapper {
+      flex-shrink: 0;
+      position: fixed;
+      height: 100%;
+      width: 14.25vw;
+    }
+
+    i {
+      color: white;
+    }
+
+    #items {
+      margin-top: 31.4px;
+      padding-top: 0;
+      padding-left: 1em;
+      padding-right: 1em;
+      padding-bottom: 1em;
+    }
+
+    #items {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .page a,
+    a:active,
+    a:focus {
+      outline: none;
+      text-decoration: none !important;
+      color: #37474f;
+      height: 44.5px;
+      min-height: 44.5px;
+    }
+
+    div.page {
+      overflow: hidden;
+      background-color: #eeeeee;
+      margin: 9px;
+      border: 1px solid #ccc;
+      width: 292px;
+      min-width: 292px;
+      height: 211.5;
+      min-height: 211.5;
+      border-radius: 10px;
+      margin-bottom: 22px;
+      box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.05), 0 1px 1px 0 rgba(0, 0, 0, 0.05);
+    }
+
+    div.page:hover {
+      box-shadow: 0px 0px 1px 1px rgb(2, 117, 216);
+      background-color: #5c5c5c;
+      border: 1px solid rgb(2, 117, 216);
+    }
+
+    div.page:hover .desc {
+      color: white;
+    }
+
+
+    div.page img {
+      object-position: 0 0;
+      z-index: -1000;
+      object-fit: cover;
+      width: 290px;
+      min-width: 290px;
+      max-width: 290px;
+      height: 180px;
+      min-height: 180px;
+      max-height: 180px;
+      border-radius: 10px 10px 0px 0px;
+    }
+
+    div.desc {
+      height: 25px;
+      min-height: 25px;
+      max-height: 25px;
+      width: 290px;
+      min-width: 290px;
+      max-width: 290px;
+      text-align: center;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+
+    .overlay {
+      position: absolute;
+      display: block;
+      z-index: 2;
+      cursor: default;
+      height: 90%;
+      width: 80vw;
+      background-color: #f9f9f9;
+    }
+
+    #loader {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -114.9px;
+      margin-left: -83.5px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      cursor: default;
+      pointer-events:none;
+    }
+
+
+    .side-button,
+    .nav-wrapper a {
+      outline: none;
+      text-decoration: none !important;
+      font-size: 15px;
+      cursor: default;
+    }
+
+    .side-button {
+      width: 100%;
+      height: 39.4px;
+      display: flex;
+      align-items: center;
+      padding-left: 5%;
+      color: #c1c1c1;
+      border-left: solid 4px #424f5a;
+    }
+
+    .side-button div {
+      padding-left: 3.5%;
+    }
+
+    .side-button:hover {
+      background-color: #5e6972;
+      border-left: solid 4px #5e6972;
+    }
+
+    .active {
+      border-left: solid 4px #ff9500;
+      background-color: #343f48;
+      color: white;
+    }
+
+    .active:hover {
+      background-color: #1a2533;
+      border-left: solid 4px #ff9500;
+    }
+
+    #loader {
+      -webkit-animation: spin 1.2s linear infinite;
+      -moz-animation: spin 1.2s linear infinite;
+      animation: spin 1.2s linear infinite;
+    }
+
+    @-moz-keyframes spin {
+      100% {
+        -moz-transform: rotate(360deg);
+      }
+    }
+
+    @-webkit-keyframes spin {
+      100% {
+        -webkit-transform: rotate(360deg);
+      }
+    }
+
+    @keyframes spin {
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+
+    #alert{
+      font-size: 150px;
+      color: rgba(200, 200, 200, 0.3);
+      margin-top: -120px;
+      margin-left: -75px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      cursor: default;
+      pointer-events:none;
+    }
+
+    #alert-text{
+      font-size: 20px;
+      color: rgba(200, 200, 200, 0.3);
+      margin-top: 50px;
+      margin-left: -122px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      cursor: default;
+      pointer-events:none;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <div id="main">
+    <nav>
+      <div class="nav-wrapper">
+        <div style="height: 39.4px;"></div>
+        <a href="#" class="button">
+          <div class="side-button active">
+            <i class="material-icons">access_time</i>
+            <div>View my history</div>
+          </div>
+        </a>
+        <a href="faq.html" class="button">
+          <div class="side-button">
+            <i class="material-icons">forum</i>
+            <div>Read the FAQ's</div>
+          </div>
+        </a>
+        <a href="settings.html" class="button">
+          <div class="side-button">
+            <i class="material-icons">settings</i>
+            <div>Change settings</div>
+          </div>
+        </a>
+      </div>
+    </nav>
+    <div id="items">
+
+      <div id="overlay" class="overlay">
+        <img id="loader" src="img/loader.png" alt="Loading history.." />
+      </div>
+
+      <div id='overlay-alert' class="overlay" style="display:none;"><i id='alert' class='material-icons'>error_outline</i><p id='alert-text'>You currently have no history.</p></div>
+
+    </div>
+  </div>
+
+  <script src="js/jquery.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>

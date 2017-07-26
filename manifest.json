@@ -1,0 +1,40 @@
+{
+
+  "manifest_version": 2,
+  "name": "Historify",
+  "permissions": ["storage", "tabs", "<all_urls>"],
+  "version": "1.2.4",
+
+  "description": "Finally a better history with images. Note: Still in development.",
+  "homepage_url": "https://flosommerfeld.github.io",
+  "author": "flosommerfeld",
+
+  "icons": {
+    "96": "icons/icon_96.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content_script.js"],
+      "run_at": "document_idle"
+    }
+  ],
+
+  "background": {
+    "scripts": ["background_script.js"]
+  },
+
+  "browser_action": {
+    "default_icon": "icons/icon_96.png",
+    "default_title": "Historify"
+  },
+
+  "applications": {
+  "gecko": {
+    "id": "historify_flosommerfeld@example.com",
+    "strict_min_version": "42.0"
+  }
+}
+
+}
