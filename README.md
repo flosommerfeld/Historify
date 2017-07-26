@@ -34,7 +34,7 @@ The trigger to take a screenshot and store all the other data is inside a conten
 Yes it is and as long as you don't publish them you won't get any problems.
 
 **How can I support the further development of the addon?**<br />
-If you'd like to help me just write a critical review on addons.mozilla.org or encourage your freinds to use Historify. A tweet would also be highly appreciated. As long as there are poeple who are using this addon I am fired up to develop it to it's best.
+If you'd like to help me just write a critical review on addons.mozilla.org or encourage your friends to use Historify. A tweet would also be highly appreciated. As long as there are poeple who are using this addon I am fired up to develop it to it's best.
 
 **How can I get in contact?**<br />
 You can just write a mail to help.flosommerfeld@gmail.com or get in contact with me at the review section.
