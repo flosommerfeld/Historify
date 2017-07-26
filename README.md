@@ -15,7 +15,7 @@
 
 ### Frequently asked questions ###
 
-**Will the screenshots eat up my hard drive space?**__
+**Will the screenshots eat up my hard drive space?**<br />
 Good question! Every screenshot gets compressed to reduce their cost of storage. Even though one screenshot might not need that much space, thousands for example will require much more space in comparison to one. Thousands of screenshots probably would go near the 100 MB mark. If you're concerned about your space, Historify has a autocleaner function which will only allow a userdefined maximum to be stored.
 
 Will you add functionalities from user requests?
