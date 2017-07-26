@@ -1,5 +1,5 @@
 # Historify
 ![picture alt](http://i.imgur.com/fgX4lxP.png "Logo")
-##Finally a better history with images. Note: Still in development. - Mozilla Firefox WebExtension##
+## Finally a better history with images. Note: Still in development. - Mozilla Firefox WebExtension ##
 
 ![picture alt](http://i.imgur.com/KkwRdP3.png "Demo screenshot")
