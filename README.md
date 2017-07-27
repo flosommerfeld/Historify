@@ -12,9 +12,9 @@
 * [Learn to develop WebExtensions](https://developer.mozilla.org/de/Add-ons/WebExtensions)
 
 - - - -
-### Description ###
+### About this Add-on ###
 Historify will store your history with screenshots of visited websites in a gallery. You will definitely need this Add-on if you wish to find websites again that you accidentally closed a while ago. The screenshots will help you to search faster for the website since most people slightly remember what the website looked like. Please be aware that this is still in development and that bugs currently do exist. Neat features will be added soon (e.g. search, visit dates).
-
+<br />
 ### Frequently asked questions ###
 
 **Will the screenshots eat up my hard drive space?**<br />
