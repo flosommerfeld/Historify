@@ -41,4 +41,4 @@ You can just write a mail to help.flosommerfeld@gmail.com or get in contact with
 <br />
 <br />
 <br />
-*Current version: 1.2.4*
+*Current version: 1.2.5*
