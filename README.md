@@ -3,8 +3,8 @@
 
 
 
-![picture alt](http://i.imgur.com/KkwRdP3.png "Demo screenshot")<br />
-[![Mozilla Add-on](https://img.shields.io/badge/Status-Experimental-yellow.svg)](https://addons.mozilla.org/de/firefox/addon/historify/)   [![Mozilla Add-on](https://img.shields.io/badge/Version-1.2.6-yellow.svg)](https://addons.mozilla.org/de/firefox/addon/historify/)
+![picture alt](http://i.imgur.com/KkwRdP3.png "Demo screenshot")
+<br /><br /><br />[![Mozilla Add-on](https://img.shields.io/badge/Status-Experimental-yellow.svg)](https://addons.mozilla.org/de/firefox/addon/historify/)   [![Mozilla Add-on](https://img.shields.io/badge/Version-1.2.6-yellow.svg)](https://addons.mozilla.org/de/firefox/addon/historify/)
 
 
 ### Finally a better history with images. Note: Still in development. - Mozilla Firefox WebExtension ###
