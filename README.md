@@ -8,6 +8,7 @@
 
 
 ### Finally a better history with images. Note: Still in development. - Mozilla Firefox WebExtension ###
+[![Mozilla Add-on](https://img.shields.io/amo/v/dustman.svg)](https://addons.mozilla.org/de/firefox/addon/historify/)
 * [Install Historify](https://addons.mozilla.org/de/firefox/addon/historify/)
 * [Learn to develop WebExtensions](https://developer.mozilla.org/de/Add-ons/WebExtensions)
 
