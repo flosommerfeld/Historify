@@ -47,4 +47,3 @@ If you'd like to help me just write a critical review on addons.mozilla.org or e
 You can just write a mail to help.flosommerfeld@gmail.com or get in contact with me at the review section.
 <br />
 <br />
-<br />
