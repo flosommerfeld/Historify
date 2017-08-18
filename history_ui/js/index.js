@@ -9,7 +9,7 @@ function onGot(item) {
     $("#overlay-alert").fadeIn(1500); //fade in the alert "You currently have no history."
   } else {
     for (i in pages) { //iterate every page and add it to the HTML
-      if (pages[i].url.startsWith('http') && pages[i].image.startsWith('data:image/jpeg;base64,')) { // making sure the url is a url and the image is a data uri graphic
+       if (pages[i].url.startsWith('http') && (pages[i].image.startsWith('data:image/jpeg;base64,') || pages[i].image == "img/noImage.jpg")) { // making sure the url is a url and the image is a data uri graphic or the standard image
         let div = document.createElement('div');
         let div2 = div.cloneNode(false); // making a clone
 
