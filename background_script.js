@@ -23,7 +23,7 @@ function onGot(item) {
       "title": title,
       "hostname": hostname
     });
-  } else {//it won't save the screenshot and uses a deafault image
+  } else {//it won't save the screenshot and uses a default image
     item.pages.push({
       "image": "img/noImage.jpg",
       "url": url,
