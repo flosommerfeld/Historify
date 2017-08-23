@@ -51,4 +51,4 @@ You can just write a mail to help.flosommerfeld@gmail.com or get in contact with
 * __Version 1.2.7:__
   Fixed the "Enable screenshots" checkbox so that Historify uses a standard placeholder image if you don't want screenshots to be taken. Before this fix the checkbox completely disabled new entries which were supposed to go into the history. 
 * __Version 1.2.6:__
-  * First official version..
+  Historify is now available for download on addons.mozilla.org!
