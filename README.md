@@ -14,7 +14,7 @@
 
 [![Mozilla Add-on](https://img.shields.io/badge/Status-Experimental-yellow.svg)](https://addons.mozilla.org/de/firefox/addon/historify/)   [![Mozilla Add-on](https://img.shields.io/badge/Version-1.2.7-yellow.svg)](https://addons.mozilla.org/de/firefox/addon/historify/)   [![Mozilla Add-on](https://img.shields.io/badge/Downloads-89-brightgreen.svg)](https://addons.mozilla.org/de/firefox/addon/historify/)
 
-
+<br/>
 ## About this Add-on
 
 Historify will store your history with screenshots of visited websites in a gallery. You will definitely need this Add-on if you wish to find websites again that you accidentally closed a while ago. The screenshots will help you to search faster for the website since most people slightly remember what the website looked like. Please be aware that this is still in development and that bugs currently do exist. Neat features will be added soon (e.g. search, visit dates).
