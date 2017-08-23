@@ -14,7 +14,6 @@
 
 [![Mozilla Add-on](https://img.shields.io/badge/Status-Experimental-yellow.svg)](https://addons.mozilla.org/de/firefox/addon/historify/)   [![Mozilla Add-on](https://img.shields.io/badge/Version-1.2.7-yellow.svg)](https://addons.mozilla.org/de/firefox/addon/historify/)   [![Mozilla Add-on](https://img.shields.io/badge/Downloads-89-brightgreen.svg)](https://addons.mozilla.org/de/firefox/addon/historify/)
 
-<br/>
 
 ## About this Add-on
 
