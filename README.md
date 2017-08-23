@@ -48,7 +48,7 @@ You can just write a mail to help.flosommerfeld@gmail.com or get in contact with
 <br />
 <br />
 ## Version history
-* Version 1.2.7
+* **Version 1.2.7: **
   Fixed the "Enable screenshots" checkbox so that Historify uses a standard placeholder image if you don't want screenshots to be taken. Before this fix the checkbox completely disabled new entries which were supposed to go into the history. 
 * Version 1.2.6
   * First official version..
