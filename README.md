@@ -48,7 +48,7 @@ You can just write a mail to help.flosommerfeld@gmail.com or get in contact with
 <br />
 <br />
 ## Version history
-* Bullet list
+* Version 1.2.7
   * Nested bullet
-   * Sub-nested bullet etc
-* Bullet list item 2
+* Version 1.2.6
+  * -- First official version--
