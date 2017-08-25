@@ -4,7 +4,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <link rel="shortcut icon" href="../icons/favicon.ico" type="image/x-icon">
   <link rel="icon" href="../icons/favicon.ico" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialicons.css" rel="stylesheet">
   <title>Historify</title>
   <style>
     @media (max-width: 1150px) {
@@ -28,6 +28,8 @@
         border-left-style: hidden;
       }
     }
+
+
 
 
     html {
@@ -270,6 +272,60 @@
       user-select: none;
       cursor: default;
       pointer-events:none;
+    }
+
+    @media (max-width: 392px) {
+      div.page {
+        width: 200px;
+        min-width: 200px;
+        height: 211.5;
+        min-height: 211.5;
+      }
+      div.desc {
+        width: 200px;
+        min-width: 200px;
+        max-width: 200px;
+      }
+
+      #alert-text{
+        display: none;
+      }
+
+      nav{
+        z-index: 99999;
+      }
+    }
+
+    @media (max-width: 283px) {
+      div.page {
+        width: 160px;
+        min-width: 160px;
+        height: 211.5;
+        min-height: 211.5;
+      }
+
+      div.desc {
+        width: 160px;
+        min-width: 160px;
+        max-width: 160px;
+      }
+
+    }
+
+    @media (max-width: 242px) {
+      div.page {
+        width: 130px;
+        min-width: 130px;
+        height: 211.5;
+        min-height: 211.5;
+      }
+
+      div.desc {
+        width: 130px;
+        min-width: 130px;
+        max-width: 130px;
+      }
+
     }
   </style>
 </head>
