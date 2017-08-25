@@ -12,7 +12,7 @@
 * [Install Historify](https://addons.mozilla.org/de/firefox/addon/historify/)
 * [Learn to develop WebExtensions](https://developer.mozilla.org/de/Add-ons/WebExtensions)
 
-[![Mozilla Add-on](https://img.shields.io/badge/Status-Experimental-yellow.svg)](https://addons.mozilla.org/de/firefox/addon/historify/)   [![Mozilla Add-on](https://img.shields.io/badge/Version-1.2.7-yellow.svg)](https://addons.mozilla.org/de/firefox/addon/historify/)   [![Mozilla Add-on](https://img.shields.io/badge/Downloads-106-brightgreen.svg)](https://addons.mozilla.org/de/firefox/addon/historify/)
+[![Mozilla Add-on](https://img.shields.io/badge/Status-Experimental-yellow.svg)](https://addons.mozilla.org/de/firefox/addon/historify/)   [![Mozilla Add-on](https://img.shields.io/badge/Version-1.3.0-yellow.svg)](https://addons.mozilla.org/de/firefox/addon/historify/)   [![Mozilla Add-on](https://img.shields.io/badge/Downloads-106-brightgreen.svg)](https://addons.mozilla.org/de/firefox/addon/historify/)
 
 
 ## About this Add-on
@@ -48,6 +48,9 @@ You can just write a mail to help.flosommerfeld@gmail.com or get in contact with
 <br />
 <br />
 ## Version history
+__Version 1.3.0:__
+  Added support for mobile devices and removed remote sources to improve security.
+  
 __Version 1.2.7:__
   Fixed the "Enable screenshots" checkbox so that Historify uses a standard placeholder image if you don't want screenshots to be taken. Before this fix the checkbox completely disabled new entries which were supposed to go into the history. 
   
