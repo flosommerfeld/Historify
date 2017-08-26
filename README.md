@@ -12,7 +12,7 @@
 * [Install Historify](https://addons.mozilla.org/de/firefox/addon/historify/)
 * [Learn to develop WebExtensions](https://developer.mozilla.org/de/Add-ons/WebExtensions)
 
-[![Mozilla Add-on](https://img.shields.io/badge/Status-Experimental-yellow.svg)](https://addons.mozilla.org/de/firefox/addon/historify/)   [![Mozilla Add-on](https://img.shields.io/badge/Version-1.3.0-yellow.svg)](https://addons.mozilla.org/de/firefox/addon/historify/)   [![Mozilla Add-on](https://img.shields.io/badge/Downloads-106-brightgreen.svg)](https://addons.mozilla.org/de/firefox/addon/historify/)
+[![Mozilla Add-on](https://img.shields.io/badge/Status-Experimental-yellow.svg)](https://addons.mozilla.org/de/firefox/addon/historify/)   [![Mozilla Add-on](https://img.shields.io/badge/Version-1.3.0-yellow.svg)](https://addons.mozilla.org/de/firefox/addon/historify/)   [![Mozilla Add-on](https://img.shields.io/badge/Downloads-131-brightgreen.svg)](https://addons.mozilla.org/de/firefox/addon/historify/)
 
 
 ## About this Add-on
