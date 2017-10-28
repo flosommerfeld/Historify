@@ -3,7 +3,7 @@
   "manifest_version": 2,
   "name": "Historify",
   "permissions": ["storage", "tabs", "<all_urls>"],
-  "version": "1.3.0",
+  "version": "1.3.1",
 
   "description": "Finally a better history with images. Note: Still in development.",
   "homepage_url": "https://github.com/flosommerfeld/Historify",
