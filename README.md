@@ -48,6 +48,9 @@ You can just write a mail to help.flosommerfeld@gmail.com or get in contact with
 <br />
 <br />
 ## Version history
+__Version 1.3.1:__
+  Fixed a small CSS bug that appeared while scrolling through your history.
+  
 __Version 1.3.0:__
   Added support for mobile devices and removed remote sources to improve security.
   
