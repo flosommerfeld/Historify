@@ -34,7 +34,7 @@ Yes, I already worked out many plans to do so. But first of all I am focussing o
 **Does this slow down my browsers performance?**<br />
 Since the addon only takes a screenshot and stores the website information locally after the website has fully loaded, it should not slow down the performance except you have an older device or too many pages in the history.
 
-**It does not take screenshots of every page, whats the problem?**<br />
+**It does not take screenshots of every page, what's the problem?**<br />
 The trigger to take a screenshot and store all the other data is inside a content script which always starts running when a website is loaded. Some pages dont allow content scripts to run on their page e.g. addons.mozilla.org, since this could lead to a security issue. I am currently working on a new way to take screenshots so that it will even work on these pages.
 
 **Is it legal to take screenshots of websites?**<br />
