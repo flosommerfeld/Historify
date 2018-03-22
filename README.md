@@ -61,6 +61,7 @@ __Version 1.2.6:__
   Historify is now available for download on addons.mozilla.org!
   
   
+  
  ## License
 
 The contents of this repository are covered under the [Mozilla Public License 2.0](LICENSE).
