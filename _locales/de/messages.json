@@ -1,0 +1,11 @@
+{
+  "extensionName": {
+    "message": "Historify",
+    "description": "Name der Weberweiterung."
+  },
+
+  "extensionDescription": {
+    "message": "Endlich ein besserer Browserverlauf mit Bildern. Anmerkung: Noch in Entwicklung.",
+    "description": "Beschreibung der Weberweiterung."
+  }
+}

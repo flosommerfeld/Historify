@@ -1,0 +1,11 @@
+{
+  "extensionName": {
+    "message": "Historify",
+    "description": "Name of the extension."
+  },
+
+  "extensionDescription": {
+    "message": "Finally a better history with images. Note: Still in development.",
+    "description": "Description of the extension."
+  }
+}
