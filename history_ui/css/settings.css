@@ -1,0 +1,232 @@
+#main {
+  margin-bottom: 100px;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 90%;
+  flex-direction: column;
+  line-height: 200%;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 115px;
+}
+
+h3 {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #424e5a;
+}
+
+p {
+  margin-top: 0px;
+  margin-bottom: 35px;
+  font-size: 16px;
+}
+
+i {
+  color: white;
+}
+
+h1 {
+  font-size: 35px;
+  font-weight: 400;
+  margin-top: 0;
+  color: #333333;
+}
+
+hr {
+  border-top: 1px solid rgba(200, 200, 200, 0.01);
+  border-left: 0px;
+  border-right: 0px;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 18px;
+}
+
+.control {
+  font-size: 17px;
+  position: relative;
+  display: block;
+  margin-bottom: 15px;
+  padding-left: 30px;
+  cursor: default;
+  color: #424e5a;
+  margin-left: 4px;
+}
+
+.control input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.control__indicator {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 23px;
+  height: 23px;
+  background: #fefefe;
+  border: 1px solid #c1c1c1;
+  border-radius: 2px;
+}
+
+/*Top border of the checkbox*/
+
+.control__indicator:before {
+  position: absolute;
+  display: block;
+  content: '';
+  border-top: 2px solid #f7f7f7;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 1px;
+}
+
+.control--radio .control__indicator {
+  border-radius: 50%;
+}
+
+/* Hover and focus states */
+
+.control:hover input~.control__indicator, .control input:focus~.control__indicator {
+  border: 1px solid #0095dd;
+}
+
+/* Check mark */
+
+.control__indicator:after {
+  position: absolute;
+  display: none;
+  content: '';
+}
+
+/* Show check mark */
+
+.control input:checked~.control__indicator:after {
+  display: block;
+}
+
+/* Checkbox tick */
+
+.control--checkbox .control__indicator:after {
+  width: inherit;
+  height: inherit;
+  background-image: url("../img/check.png");
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+/* Radio button inner circle */
+
+.control--radio .control__indicator:after {
+  top: 7px;
+  left: 7px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.select-style {
+  padding: 0;
+  margin: 0;
+  border: 1px solid #c1c1c1;
+  width: 130px;
+  border-radius: 2px;
+  overflow: hidden;
+  background-color: #fbfbfb;
+}
+
+.select-style:hover {
+  background-color: #ebebeb;
+}
+
+.select-style select {
+  padding: 5px 8px;
+  width: 100%;
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+  background-image: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url("../img/arrow.png") no-repeat right;
+  font-size: 14px;
+  color: #333333;
+}
+
+.select-style select:focus {
+  outline: none;
+}
+
+.select-wrapper {
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 4px;
+  margin-top: 7px;
+}
+
+.select-desc {
+  font-size: 17px;
+  color: #424e5a;
+  width: 164px;
+}
+
+br {
+  display: block;
+  margin: 7px 0;
+}
+
+input[type=number] {
+  color: #333333;
+  width: 130px;
+  border-radius: 2px;
+  border: 1px solid #c1c1c1;
+  padding: 5px 8px;
+  font-size: 14px;
+  padding-left: 12px;
+  background-color: #fbfbfb;
+}
+
+input[type=number]:focus {
+  border: 1px solid #0095dd;
+}
+
+#delete {
+  padding: 5px;
+  margin: 0;
+  border: 1px solid #c1c1c1;
+  width: 125px;
+  border-radius: 2px;
+  overflow: hidden;
+  background-color: #fbfbfb;
+  color: #333333;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  cursor: default;
+}
+
+#delete:hover {
+  background-color: #ebebeb;
+}
+
+#delete:active {
+  background-color: #dadada;
+}
+
+@media (max-width: 466px) {
+  .container {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
