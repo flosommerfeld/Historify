@@ -22,56 +22,61 @@
         <a href="index.html" class="button">
           <div class="side-button">
             <i class="material-icons">access_time</i>
-            <div>View my history</div>
+            <div class="i18n-ui" data-i18n="nav.tab1">View my history</div>
           </div>
         </a>
         <a href="#" class="button">
           <div class="side-button active">
             <i class="material-icons">forum</i>
-            <div>Read the FAQ's</div>
+            <div class="i18n-ui" data-i18n="nav.tab2">Read the FAQ's</div>
           </div>
         </a>
         <a href="settings.html" class="button">
           <div class="side-button">
             <i class="material-icons">settings</i>
-            <div>Change settings</div>
+            <div class="i18n-ui" data-i18n="nav.tab3">Change settings</div>
           </div>
         </a>
       </div>
     </nav>
     <div class="container">
-      <h1>FAQ's</h1>
+      <h1 class="i18n-ui" data-i18n="faq.title">FAQ's</h1>
       <hr>
-      <h3>Will the screenshots eat up my hard drive space?</h3>
-      <p>Good question! Every screenshot gets compressed to reduce their cost of storage. Even though one screenshot might not need that much space, thousands for example will require much more space in comparison to one. Thousands of screenshots probably would go
-        near the 100 MB mark. If you're curious about your space, Historify has a autocleaner function which will only allow a userdefined maximum to be stored.</p>
-      <h3>Will you add functionalities from user requests?</h3>
-      <p>
+      <h3 class="i18n-ui" data-i18n="faq.question1">Will the screenshots eat up my hard drive space?</h3>
+      <p class="i18n-ui" data-i18n="faq.answer1">Good question! Every screenshot gets compressed to reduce their cost of storage. Even though one screenshot might not need that much space, thousands for example will require much more space in comparison to one. Thousands of screenshots would probably
+        go near the 100 MB mark. If you're bothered about your space, Historify has an autocleaner function which will only allow a userdefined maximum to be stored.</p>
+      <h3 class="i18n-ui" data-i18n="faq.question2">Will you add functionalities from user requests?</h3>
+      <p class="i18n-ui" data-i18n="faq.answer2">
         Of course! Im always happy to hear about your thoughts. Without user requests I probably would not even know how to improve the addon. But functionalities will only be added if I am sure that every user can benefit by them.</p>
-      <h3>Are you going to improve the loading performance of the history?</h3>
-      <p>Yes, I already worked out many plans to do so. But first of all I am focussing on some other problems.</p>
-      <h3>Does this slow down my browsers performance?</h3>
-      <p>
+      <h3 class="i18n-ui" data-i18n="faq.question3">Are you going to improve the loading performance of the history?</h3>
+      <p class="i18n-ui" data-i18n="faq.answer3">Yes, I already worked out many plans to do so. But first of all I am focussing on some other problems.</p>
+      <h3 class="i18n-ui" data-i18n="faq.question4">Does this slow down my browsers performance?</h3>
+      <p class="i18n-ui" data-i18n="faq.answer4">
         Since the addon only takes a screenshot and stores the website information locally after the website has fully loaded, it should not slow down the performance except you have an older device or too many pages in the history.
       </p>
-      <h3>It does not take screenshots of every page, what's the problem?</h3>
-      <p>
+      <h3 class="i18n-ui" data-i18n="faq.question5">It does not take screenshots of every page, what's the problem?</h3>
+      <p class="i18n-ui" data-i18n="[html]faq.answer5">
         The trigger to take a screenshot and store all the other data is inside a content script which always starts running when a website is loaded. Some pages dont allow content scripts to run on their page e.g. <a href="https://addons.mozilla.org">addons.mozilla.org</a>,
         since this could lead to a security issue. I am currently working on a new way to take screenshots so that it will even work on these pages.
       </p>
-      <h3>Is it legal to take screenshots of websites?</h3>
-      <p>Yes it is and as long as you don't publish them you won't get any problems.</p>
-      <h3>How can I support the further development of the addon?</h3>
-      <p>
+      <h3 class="i18n-ui" data-i18n="faq.question6">Is it legal to take screenshots of websites?</h3>
+      <p class="i18n-ui" data-i18n="faq.answer6">Yes it is and as long as you don't publish them you won't get any problems.</p>
+      <h3 class="i18n-ui" data-i18n="faq.question7">How can I support the further development of the addon?</h3>
+      <p class="i18n-ui" data-i18n="[html]faq.answer7">
         If you'd like to help me just write a critical review on <a href="https://addons.mozilla.org/de/firefox/addon/historify/" target="_blank">addons.mozilla.org</a> or encourage your friends to use Historify. A tweet would also be highly appreciated.
         As long as there are poeple who are using this addon I am fired up to develop it to it's best.
       </p>
-      <h3>How can I get in contact?</h3>
-      <p>You can just write a mail to <a href="mailto:help.flosommerfeld@gmail.com?Subject=Historify" target="_blank">help.flosommerfeld@gmail.com</a> or get in contact with me at the review section.</p>
+      <h3 class="i18n-ui" data-i18n="faq.question8">How can I get in contact?</h3>
+      <p class="i18n-ui" data-i18n="[html]faq.answer8">You can just write a mail to <a href="mailto:flosommerfeld@pm.me?Subject=Historify" target="_blank">flosommerfeld@pm.me</a> or get in contact with me at the review section.</p>
 
     </div>
   </div>
 
+  <script src="js/i18next-jquery.js"></script>
+  <script src="js/i18next.js"></script>
+  <script src="js/jquery.js"></script>
+
+  <script src="js/i18next-init.js"></script>
 </body>
 
 </html>

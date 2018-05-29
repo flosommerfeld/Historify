@@ -23,7 +23,7 @@ function onGot(item) {
         img.src = pages[i].image;
 
         div2.className = 'desc';
-        div2.setAttribute('style', 'line-height:30px;');
+        //div2.setAttribute('style', 'line-height:30px;');
         div2.textContent = pages[i].title;
 
         a.appendChild(img);

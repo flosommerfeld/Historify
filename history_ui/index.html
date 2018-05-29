@@ -22,19 +22,19 @@
         <a href="#" class="button">
           <div class="side-button active">
             <i class="material-icons">access_time</i>
-            <div>View my history</div>
+            <div class="i18n-ui" data-i18n="nav.tab1">View my history</div>
           </div>
         </a>
         <a href="faq.html" class="button">
           <div class="side-button">
             <i class="material-icons">forum</i>
-            <div>Read the FAQ's</div>
+            <div class="i18n-ui" data-i18n="nav.tab2">Read the FAQ's</div>
           </div>
         </a>
         <a href="settings.html" class="button">
           <div class="side-button">
             <i class="material-icons">settings</i>
-            <div>Change settings</div>
+            <div class="i18n-ui" data-i18n="nav.tab3">Change settings</div>
           </div>
         </a>
       </div>
@@ -45,12 +45,17 @@
         <img id="loader" src="img/loader.png" alt="Loading history.." />
       </div>
 
-      <div id='overlay-alert' class="overlay" style="display:none;"><i id='alert' class='material-icons'>error_outline</i><p id='alert-text'>You currently have no history.</p></div>
+      <div id='overlay-alert' class="overlay" style="display:none;"><i id='alert' class='material-icons'>error_outline</i><p id='alert-text' class="i18n-ui" data-i18n="history.noHistory">You currently have no history.</p></div>
 
     </div>
   </div>
 
+  <script src="js/i18next-jquery.js"></script>
+  <script src="js/i18next.js"></script>
   <script src="js/jquery.js"></script>
+
+  <script src="js/i18next-init.js"></script>
+
   <script src="js/index.js"></script>
 </body>
 

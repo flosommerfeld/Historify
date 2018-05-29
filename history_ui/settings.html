@@ -22,38 +22,38 @@
         <a href="index.html" class="button">
           <div class="side-button">
             <i class="material-icons">access_time</i>
-            <div>View my history</div>
+            <div class="i18n-ui" data-i18n="nav.tab1">View my history</div>
           </div>
         </a>
         <a href="faq.html" class="button">
           <div class="side-button">
             <i class="material-icons">forum</i>
-            <div>Read the FAQ's</div>
+            <div class="i18n-ui" data-i18n="nav.tab2">Read the FAQ's</div>
           </div>
         </a>
         <a href="#" class="button">
           <div class="side-button active">
             <i class="material-icons">settings</i>
-            <div>Change settings</div>
+            <div class="i18n-ui" data-i18n="nav.tab3">Change settings</div>
           </div>
         </a>
       </div>
     </nav>
     <div class="container">
-      <h1>Settings</h1>
+      <h1 class="i18n-ui" data-i18n="settings.title">Settings</h1>
       <hr>
       <div class="control-group">
-        <label class="control control--checkbox">Enable screenshots
+        <label class="control control--checkbox i18n-ui" data-i18n="[append]settings.form1"><!--Enable screenshots-->
 		      <input id="screenshots_box" type="checkbox"/>
 		      <div class="control__indicator"></div>
 	      </label>
-        <label class="control control--checkbox">Enable autocleaner
+        <label class="control control--checkbox i18n-ui" data-i18n="[append]settings.form2"><!--Enable autocleaner-->
 		      <input id="autocleaner_box" type="checkbox"/>
 		      <div class="control__indicator"></div>
 	      </label>
         <br>
         <div class="select-wrapper">
-          <div class="select-desc">Screenshot quality:</div>
+          <div class="select-desc i18n-ui" data-i18n="settings.form3">Screenshot quality:</div>
           <div class="select-style">
             <select id="screenshots_quality" style="width:130px;">
             <option value="low">Low</option>
@@ -64,19 +64,24 @@
 
         </div>
         <div class="select-wrapper">
-          <div class="select-desc"> Autoclean at (in MB):</div>
+          <div class="select-desc i18n-ui" data-i18n="settings.form4">Autoclean at (in MB):</div>
           <input id="autoclean_at" type="number" name="autoclean_at">
         </div>
 
         <br><br><br>
-        <button id="delete">Delete history</button>
+        <button id="delete" class="i18n-ui" data-i18n="settings.button">Delete history</button>
       </div>
 
     </div>
   </div>
 
 
+  <script src="js/i18next-jquery.js"></script>
+  <script src="js/i18next.js"></script>
   <script src="js/jquery.js"></script>
+
+  <script src="js/i18next-init.js"></script>
+
   <script src="js/settings.js"></script>
 
 </body>
