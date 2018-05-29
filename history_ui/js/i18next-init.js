@@ -39,6 +39,9 @@ i18next.init({
           form2: "Enable autocleaner",
           form3: "Screenshot quality:",
           form4: "Autoclean at (in MB):",
+          form3option1: "Low",
+          form3option2: "Medium",
+          form3option3: "High",
           button: "Delete history"
         }
 
@@ -82,6 +85,9 @@ i18next.init({
           form2: "Autobereinigung aktivieren",
           form3: "Screenshotqualität:",
           form4: "Autobereinigung ab (in MB)",
+          form3option1: "Niedrig",
+          form3option2: "Mittel",
+          form3option3: "Hoch",
           button: "Browserverlauf löschen"
         }
       }
