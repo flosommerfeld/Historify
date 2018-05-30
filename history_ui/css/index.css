@@ -88,9 +88,6 @@ div.desc {
   user-select: none;
   cursor: default;
   pointer-events: none;
-}
-
-#loader {
   -webkit-animation: spin 1.2s linear infinite;
   -moz-animation: spin 1.2s linear infinite;
   animation: spin 1.2s linear infinite;
@@ -137,6 +134,7 @@ div.desc {
   user-select: none;
   cursor: default;
   pointer-events: none;
+  text-align: center;
 }
 
 @media (max-width: 392px) {
