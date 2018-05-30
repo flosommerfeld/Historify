@@ -1,5 +1,5 @@
 i18next.init({
-  lng: 'de',
+  lng: localStorage.getItem("language"),
   resources: {
     en: {
       translation: {
@@ -37,11 +37,14 @@ i18next.init({
           title: "Change settings",
           form1: "Enable screenshots",
           form2: "Enable autocleaner",
-          form3: "Screenshot quality:",
-          form4: "Autoclean at (in MB):",
-          form3option1: "Low",
-          form3option2: "Medium",
-          form3option3: "High",
+          form3: "Language:",
+          form4: "Screenshot quality:",
+          form5: "Autoclean at (in MB):",
+          form3option1: "English",
+          form3option2: "German",
+          form4option1: "Low",
+          form4option2: "Medium",
+          form4option3: "High",
           button: "Delete history"
         }
 
@@ -83,11 +86,14 @@ i18next.init({
           title: "Einstellungen ändern",
           form1: "Screenshots aktivieren",
           form2: "Autobereinigung aktivieren",
-          form3: "Screenshotqualität:",
-          form4: "Autobereinigung ab (in MB)",
-          form3option1: "Niedrig",
-          form3option2: "Mittel",
-          form3option3: "Hoch",
+          form3: "Sprache",
+          form4: "Screenshotqualität:",
+          form5: "Autobereinigung ab (in MB)",
+          form3option1: "Englisch",
+          form3option2: "Deutsch",
+          form4option1: "Niedrig",
+          form4option2: "Mittel",
+          form4option3: "Hoch",
           button: "Browserverlauf löschen"
         }
       }

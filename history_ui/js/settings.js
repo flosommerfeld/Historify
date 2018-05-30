@@ -38,6 +38,10 @@ function initalizeStorage() {//initialization of the localStorage
     localStorage.setItem("screenshots_quality", "medium");
   }
 
+  if (localStorage.getItem("language") != "en" && localStorage.getItem("language") != "de") {
+    localStorage.setItem("language", "en");
+  }
+
 }
 
 $(document).ready(function() {
@@ -45,6 +49,7 @@ $(document).ready(function() {
 
   $("#autoclean_at").val(parseInt(localStorage.getItem("autoclean_at")));//add the saved autoclean value to the form
   $("#screenshots_quality").val(localStorage.getItem("screenshots_quality"));//add the saved screenshots quality value to the form
+  $("#language").val(localStorage.getItem("language"));//add the language value to the form
 
   $("#screenshots_box").click(function() {//listen for clicks on the checkbox "Enable screenshots"
     switchScreenshots();//switch
@@ -63,5 +68,9 @@ $(document).ready(function() {
   })
   $("#autoclean_at").on('change', function() {//update the saved autoclean value on change
     localStorage.setItem("autoclean_at", this.value);
+  })
+  $("#language").on('change', function() {//update the saved autoclean value on change
+    localStorage.setItem("language", this.value);
+    window.location.reload();
   })
 });

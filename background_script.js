@@ -9,21 +9,21 @@ var options = {
 };
 
 
-function onError(error) {//log the error
+function onError(error) { //log the error
   console.log(`Error: ${error}`);
 }
 
 function onGot(item) {
-  autocleanValue = parseInt(localStorage.getItem("autoclean_at")) * 1000000;//Converts the autoclean value vaguely to bytes
+  autocleanValue = parseInt(localStorage.getItem("autoclean_at")) * 1000000; //Converts the autoclean value vaguely to bytes
 
-  if (localStorage.getItem("screenshots") == "on") {//if screenshots are turned on it will save the screenshot
+  if (localStorage.getItem("screenshots") == "on") { //if screenshots are turned on it will save the screenshot
     item.pages.push({
       "image": localStorage.getItem("screenshotUri"),
       "url": url,
       "title": title,
       "hostname": hostname
     });
-  } else {//it won't save the screenshot and uses a default image
+  } else { //it won't save the screenshot and uses a default image
     item.pages.push({
       "image": "img/noImage.jpg",
       "url": url,
@@ -38,8 +38,8 @@ function onGot(item) {
     }
   }
 
-  let setting = browser.storage.local.set(item);//save changes to the JSON object
-  setting.then(null, onError);//promise
+  let setting = browser.storage.local.set(item); //save changes to the JSON object
+  setting.then(null, onError); //promise
 }
 
 function onCaptured(screenshotUri) { //save the screenshot locally and get the JSON object to go on..
@@ -49,13 +49,13 @@ function onCaptured(screenshotUri) { //save the screenshot locally and get the J
 
 }
 
-function getMessage(message) {//gets a message to take screenshots from the content_script
+function getMessage(message) { //gets a message to take screenshots from the content_script
   url = message.url;
   title = message.title;
   hostname = message.hostname;
   if (message.msg == "screenshot") { //if message says to take a screenshot
 
-    if (localStorage.getItem("screenshots_quality") == "low") {//initialize the image quality for the screenshot
+    if (localStorage.getItem("screenshots_quality") == "low") { //initialize the image quality for the screenshot
       imageQuality = 15;
     } else if (localStorage.getItem("screenshots_quality") == "medium") {
       imageQuality = 45;
@@ -73,13 +73,13 @@ function getMessage(message) {//gets a message to take screenshots from the cont
   }
 }
 
-function getCurrentWindowTabs() {//get the tabs in the current window
+function getCurrentWindowTabs() { //get the tabs in the current window
   return browser.tabs.query({
     currentWindow: true
   });
 }
 
-function handleClick() {//onclick listener for the icon in the toolbar
+function handleClick() { //onclick listener for the icon in the toolbar
   function callOnActiveTab(callback) {
     getCurrentWindowTabs().then((tabs) => {
       for (var tab of tabs) {
@@ -94,7 +94,7 @@ function handleClick() {//onclick listener for the icon in the toolbar
   });
 }
 
-function roughSizeOfObject(object) {//calculate the size of the JSON object which is saved locally
+function roughSizeOfObject(object) { //calculate the size of the JSON object which is saved locally
   var objectList = [];
   var recurse = function(value) {
     var bytes = 0;
@@ -119,20 +119,22 @@ function roughSizeOfObject(object) {//calculate the size of the JSON object whic
   return recurse(object);
 }
 
-
-if (localStorage.getItem("screenshots") == null) {//screenshot initialization
+if (localStorage.getItem("language") == null) { //language initialization
+  localStorage.setItem("language", browser.i18n.getUILanguage());
+}
+if (localStorage.getItem("screenshots") == null) { //screenshot initialization
   localStorage.setItem("screenshots", "on");
   browser.storage.local.set({ //JSON object initialization
     pages: []
   });
 }
-if (localStorage.getItem("autocleaner") == null) {//autocleaner initialization
+if (localStorage.getItem("autocleaner") == null) { //autocleaner initialization
   localStorage.setItem("autocleaner", "on");
 }
-if (localStorage.getItem("autoclean_at") == null) {//autocleaner value initialization
+if (localStorage.getItem("autoclean_at") == null) { //autocleaner value initialization
   localStorage.setItem("autoclean_at", "50");
 }
-if (localStorage.getItem("screenshots_quality") == null) {//screenshot quality initialization
+if (localStorage.getItem("screenshots_quality") == null) { //screenshot quality initialization
   localStorage.setItem("screenshots_quality", "medium");
 }
 
