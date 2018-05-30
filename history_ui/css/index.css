@@ -8,9 +8,6 @@
   padding-left: 1em;
   padding-right: 1em;
   padding-bottom: 1em;
-}
-
-#items {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -68,12 +65,15 @@ div.desc {
 
 .overlay {
   position: absolute;
-  display: block;
   z-index: 2;
   cursor: default;
   height: 90%;
   width: 80vw;
   background-color: #f9f9f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 #loader {
@@ -118,11 +118,7 @@ div.desc {
 #alert {
   font-size: 150px;
   color: rgba(200, 200, 200, 0.3);
-  margin-top: -120px;
-  margin-left: -75px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  max-width: 50%;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -134,11 +130,7 @@ div.desc {
 #alert-text {
   font-size: 20px;
   color: rgba(200, 200, 200, 0.3);
-  margin-top: 50px;
-  margin-left: -122px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  max-width: 50%;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
