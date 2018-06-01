@@ -38,7 +38,8 @@ function initalizeStorage() {//initialization of the localStorage
     localStorage.setItem("screenshots_quality", "medium");
   }
 
-  if (localStorage.getItem("language") != "en" && localStorage.getItem("language") != "de") {
+  if (localStorage.getItem("language") != "en" && localStorage.getItem("language") != "de" && localStorage.getItem("language") != "es" && localStorage.getItem("language") != "fr" && localStorage.getItem("language") != "ja"
+  && localStorage.getItem("language") != "pt" && localStorage.getItem("language") != "ru") {// TODO: liste erstellen und dann überprüfen ob sprache in liste
     localStorage.setItem("language", "en");
   }
 

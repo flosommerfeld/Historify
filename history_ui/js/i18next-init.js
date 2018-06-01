@@ -4,17 +4,17 @@ i18next.init({
     en: {
       translation: {
         nav: {
-          tab1: "View my history",
-          tab2: "Read the FAQ's",
+          tab1: "My browsing history",
+          tab2: "Frequently asked questions",
           tab3: "Change settings"
         },
 
         history: {
-          noHistory: "You currently have no history."
+          noHistory: "You currently have no browsing history."
         },
 
         faq: {
-          title: "Read the FAQ's",
+          title: "Frequently asked questions",
           question1: "Will the screenshots eat up my hard drive space?",
           question2: "Will you add functionalities from user requests?",
           question3: "Are you going to improve the loading performance of the history?",
@@ -37,19 +37,29 @@ i18next.init({
           title: "Change settings",
           form1: "Enable screenshots",
           form2: "Enable autocleaner",
-          form3: "Language:",
-          form4: "Screenshot quality:",
+          form3: {
+            title: "Language:",
+            option1: "English",
+            option2: "German",
+            option3: "Spanish",
+            option4: "French",
+            option5: "Japanese",
+            option6: "Portuguese",
+            option7: "Russian"
+          },
+          form4: {
+            title: "Screenshot quality:",
+            option1: "Low",
+            option2: "Medium",
+            option3: "High"
+          },
           form5: "Autoclean at (in MB):",
-          form3option1: "English",
-          form3option2: "German",
-          form4option1: "Low",
-          form4option2: "Medium",
-          form4option3: "High",
-          button: "Delete history"
+          button: "Delete history",
         }
 
       }
     },
+
     de: {
       translation: {
         nav: {
@@ -86,15 +96,235 @@ i18next.init({
           title: "Einstellungen ändern",
           form1: "Screenshots aktivieren",
           form2: "Autobereinigung aktivieren",
-          form3: "Sprache",
-          form4: "Screenshotqualität:",
+          form3: {
+            title: "Sprache:",
+            option1: "Englisch",
+            option2: "Deutsch",
+            option3: "Spanisch",
+            option4: "Französisch",
+            option5: "Japanisch",
+            option6: "Portugiesisch",
+            option7: "Russisch"
+          },
+          form4: {
+            title: "Screenshotqualität:",
+            option1: "Niedrig",
+            option2: "Mittel",
+            option3: "Hoch"
+          },
           form5: "Autobereinigung ab (in MB)",
-          form3option1: "Englisch",
-          form3option2: "Deutsch",
-          form4option1: "Niedrig",
-          form4option2: "Mittel",
-          form4option3: "Hoch",
           button: "Browserverlauf löschen"
+        }
+      }
+    },
+
+    es: {
+      translation: {
+        nav: {
+          tab1: "Historial de exploración",
+          tab2: "Preguntas frecuentes",
+          tab3: "Cambiar ajustes"
+        },
+
+        history: {
+          noHistory: "Actualmente no tienes historial de navegación."
+        },
+        faq: {
+          title: "Preguntas frecuentes (solo inglés)"
+        },
+
+        settings: {
+          title: "Cambiar ajustes",
+          form1: "Habilitar capturas de pantalla",
+          form2: "Habilitar limpiador automático",
+          form3: {
+            title: "Idioma:",
+            option1: "Inglés",
+            option2: "Alemán",
+            option3: "Español",
+            option5: "Japonês",
+            option6: "Portugués",
+            option7: "Ruso"
+          },
+          form4: {
+            title: "Calidad de captura de pantalla:",
+            option1: "Bajo",
+            option2: "Medio",
+            option3: "Alto",
+            option4: "Francés"
+          },
+          form5: "Autoclean at (in MB):",
+          button: "Borrar historial"
+        }
+
+      }
+    },
+
+    fr: {
+      translation: {
+        nav: {
+          tab1: "Historique de navigation",
+          tab2: "Questions fréquemment posées",
+          tab3: "Modifier les paramètres"
+        },
+
+        history: {
+          noHistory: "Vous n'avez actuellement aucun historique de navigation."
+        },
+
+        faq: {
+          title: "Questions fréquemment posées (que l'anglais)",
+        },
+
+        settings: {
+          title: "Modifier les paramètres",
+          form1: "Activer les captures d'écran",
+          form2: "--Autobereinigung aktivieren--",
+          form3: {
+            title: "La langue:",
+            option1: "Anglais",
+            option2: "Allemand",
+            option3: "Espanol",
+            option4: "Français",
+            option5: "Japanese",
+            option6: "Portugais",
+            option7: "Russe"
+          },
+          form4: {
+            title: "Qualité d'image:",
+            option1: "Faible",
+            option2: "Moyen",
+            option3: "Haute"
+          },
+          form5: "--Autobereinigung ab (in MB)--",
+          button: "Supprimer l'historique de navigation"
+        }
+      }
+    },
+
+    ja: {
+      translation: {
+        nav: {
+          tab1: "閲覧履歴",
+          tab2: "よくある質問",
+          tab3: "設定を変更する"
+        },
+
+        history: {
+          noHistory: "現在閲覧履歴はありません."
+        },
+
+        faq: {
+          title: "よくある質問 (英語だけ)",
+        },
+
+        settings: {
+          title: "設定を変更する",
+          form1: "スクリーンショット",
+          form2: "--Autobereinigung aktivieren--",
+          form3: {
+            title: "言語:",
+            option1: "英語",
+            option2: "ドイツ人",
+            option3: "スペイン語",
+            option4: "フランス語",
+            option5: "日本語",
+            option6: "ポルトガル語",
+            option7: "ロシア"
+          },
+          form4: {
+            title: "スクリーンショットの品質:",
+            option1: "低い",
+            option2: "中",
+            option3: "高い"
+          },
+          form5: "--Autobereinigung ab (in MB)--",
+          button: "閲覧履歴の消去"
+        }
+      }
+    },
+
+    pt: {
+      translation: {
+        nav: {
+          tab1: "Histórico de navegação",
+          tab2: "Perguntas frequentes",
+          tab3: "Mudar configurações"
+        },
+
+        history: {
+          noHistory: "Você atualmente não tem histórico de navegação."
+        },
+
+        faq: {
+          title: "Perguntas frequentes (apenas inglês)",
+        },
+
+        settings: {
+          title: "Mudar configurações",
+          form1: "Captura de ecrã",
+          form2: "--Autobereinigung aktivieren--",
+          form3: {
+            title: "Língua:",
+            option1: "Inglês",
+            option2: "Alemão",
+            option3: "Espanhol",
+            option4: "Francês",
+            option5: "Japonês",
+            option6: "Português",
+            option7: "Russo"
+          },
+          form4: {
+            title: "Qualidade de captura de ecrã:",
+            option1: "Baixo",
+            option2: "Médio",
+            option3: "Alto"
+          },
+          form5: "--Autobereinigung ab (in MB)--",
+          button: "Excluir histórico de navegação"
+        }
+      }
+    },
+
+    ru: {
+      translation: {
+        nav: {
+          tab1: "История браузера",
+          tab2: "Часто задаваемые вопросы",
+          tab3: "Изменить настройки"
+        },
+
+        history: {
+          noHistory: "В настоящее время у вас нет истории просмотров."
+        },
+
+        faq: {
+          title: "Часто задаваемые вопросы (только английский)",
+        },
+
+        settings: {
+          title: "Изменить настройки",
+          form1: "Скриншоты",
+          form2: "--Autobereinigung aktivieren--",
+          form3: {
+            title: "язык:",
+            option1: "английский",
+            option2: "Немецкий",
+            option3: "испанский",
+            option4: "Французский",
+            option5: "Японский",
+            option6: "португальский",
+            option7: "русский"
+
+          },
+          form4: {
+            title: "Качество снимков экрана:",
+            option1: "Низкий",
+            option2: "средний",
+            option3: "Высокая"
+          },
+          form5: "--Autobereinigung ab (in MB)--",
+          button: "Удалить историю браузера"
         }
       }
     }
@@ -102,9 +332,4 @@ i18next.init({
 }, function(err, t) {
   i18nextJquery.init(i18next, $);
   $('.i18n-ui').localize();
-
-  /*$('.lang-select').click(function() {
-    i18next.changeLanguage(this.innerHTML);             SPRACHAUSWAHL
-    $('.test').localize();
-  });*/
 });
