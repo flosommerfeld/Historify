@@ -1,3 +1,6 @@
+var languages = ["en", "de", "es", "fr", "ja", "pt", "ru"];
+
+
 function switchScreenshots() {//switch between the screenshot value on and off
   if (localStorage.getItem("screenshots") == "off") {
     localStorage.setItem("screenshots", "on");
@@ -38,8 +41,7 @@ function initalizeStorage() {//initialization of the localStorage
     localStorage.setItem("screenshots_quality", "medium");
   }
 
-  if (localStorage.getItem("language") != "en" && localStorage.getItem("language") != "de" && localStorage.getItem("language") != "es" && localStorage.getItem("language") != "fr" && localStorage.getItem("language") != "ja"
-  && localStorage.getItem("language") != "pt" && localStorage.getItem("language") != "ru") {// TODO: liste erstellen und dann überprüfen ob sprache in liste
+  if (languages.indexOf(localStorage.getItem("language")) == -1) {//Check if the language in the local storage is supported - if not then set english as default
     localStorage.setItem("language", "en");
   }
 
