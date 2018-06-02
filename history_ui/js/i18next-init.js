@@ -36,7 +36,7 @@ i18next.init({
         settings: {
           title: "Change settings",
           form1: "Enable screenshots",
-          form2: "Enable autocleaner",
+          form2: "Limit disk space usage",
           form3: {
             title: "Language:",
             option1: "English",
@@ -53,7 +53,7 @@ i18next.init({
             option2: "Medium",
             option3: "High"
           },
-          form5: "Autoclean at (in MB):",
+          form5: "Maximum disk space usage (in MB):",
           button: "Delete history",
         }
 
@@ -95,7 +95,7 @@ i18next.init({
         settings: {
           title: "Einstellungen ändern",
           form1: "Screenshots aktivieren",
-          form2: "Autobereinigung aktivieren",
+          form2: "Festplattennutzung limitieren",
           form3: {
             title: "Sprache:",
             option1: "Englisch",
@@ -112,7 +112,7 @@ i18next.init({
             option2: "Mittel",
             option3: "Hoch"
           },
-          form5: "Autobereinigung ab (in MB)",
+          form5: "Maximale Festplattennutzung (in MB):",
           button: "Browserverlauf löschen"
         }
       }
@@ -136,7 +136,7 @@ i18next.init({
         settings: {
           title: "Cambiar ajustes",
           form1: "Habilitar capturas de pantalla",
-          form2: "Habilitar limpiador automático",
+          form2: "Limitar el uso del disco",
           form3: {
             title: "Idioma:",
             option1: "Inglés",
@@ -153,7 +153,7 @@ i18next.init({
             option3: "Alto",
             option4: "Francés"
           },
-          form5: "Autoclean at (in MB):",
+          form5: "Uso máximo de disco (en MB):",
           button: "Borrar historial"
         }
 
@@ -179,7 +179,7 @@ i18next.init({
         settings: {
           title: "Modifier les paramètres",
           form1: "Activer les captures d'écran",
-          form2: "--Autobereinigung aktivieren--",
+          form2: "Limiter l'utilisation du disque",
           form3: {
             title: "La langue:",
             option1: "Anglais",
@@ -196,7 +196,7 @@ i18next.init({
             option2: "Moyen",
             option3: "Haute"
           },
-          form5: "--Autobereinigung ab (in MB)--",
+          form5: "Utilisation maximale du disque (en MB):",
           button: "Supprimer l'historique de navigation"
         }
       }
@@ -221,7 +221,7 @@ i18next.init({
         settings: {
           title: "設定を変更する",
           form1: "スクリーンショット",
-          form2: "--Autobereinigung aktivieren--",
+          form2: "ディスク使用量を制限する",
           form3: {
             title: "言語:",
             option1: "英語",
@@ -238,7 +238,7 @@ i18next.init({
             option2: "中",
             option3: "高い"
           },
-          form5: "--Autobereinigung ab (in MB)--",
+          form5: "最大ディスク使用量（メガバイト単位):",
           button: "閲覧履歴の消去"
         }
       }
@@ -263,7 +263,7 @@ i18next.init({
         settings: {
           title: "Mudar configurações",
           form1: "Captura de ecrã",
-          form2: "--Autobereinigung aktivieren--",
+          form2: "Limite de uso de disco",
           form3: {
             title: "Língua:",
             option1: "Inglês",
@@ -280,7 +280,7 @@ i18next.init({
             option2: "Médio",
             option3: "Alto"
           },
-          form5: "--Autobereinigung ab (in MB)--",
+          form5: "Uso máximo de disco (em MB):",
           button: "Excluir histórico de navegação"
         }
       }
@@ -305,7 +305,7 @@ i18next.init({
         settings: {
           title: "Изменить настройки",
           form1: "Скриншоты",
-          form2: "--Autobereinigung aktivieren--",
+          form2: "Oграничение использования диска",
           form3: {
             title: "язык:",
             option1: "английский",
@@ -323,7 +323,7 @@ i18next.init({
             option2: "средний",
             option3: "Высокая"
           },
-          form5: "--Autobereinigung ab (in MB)--",
+          form5: "Mаксимальное использование диска (в MB):",
           button: "Удалить историю браузера"
         }
       }
