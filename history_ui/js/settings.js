@@ -1,5 +1,9 @@
 var languages = ["en", "de", "es", "fr", "ja", "pt", "ru"];
 
+function showAlert(){// TODO: implement a better way for detecting if any settings were changed
+  $(".alert").stop();
+  $(".alert").fadeIn("slow").delay(2500).fadeOut();
+}
 
 function switchScreenshots() { //switch between the screenshot value on and off
   if (localStorage.getItem("screenshots") == "off") {
@@ -75,24 +79,40 @@ $(document).ready(function() {
 
   $("#screenshots_box").click(function() { //listen for clicks on the checkbox "Enable screenshots"
     switchScreenshots(); //switch
+
+    showAlert();
+
   });
   $("#autocleaner_box").click(function() { //listen for clicks on the checkbox "Enable autocleaner"
     switchAutocleaner(); //switch
+
+    showAlert();
+
   });
   $("#delete").click(function() { //delete the history by overwriting the JSON object
     browser.storage.local.set({
       pages: []
     });
+    showAlert();
   });
 
   $("#screenshots_quality").on('change', function() { //update the saved screenshot quality value on change
     localStorage.setItem("screenshots_quality", this.value);
+
+showAlert();
+
   })
   $("#autoclean_at").on('change', function() { //update the saved autoclean value on change
     localStorage.setItem("autoclean_at", this.value);
+
+showAlert();
+
   })
   $("#language").on('change', function() { //update the saved autoclean value on change
     localStorage.setItem("language", this.value);
+
+showAlert();
+
     window.location.reload();
   })
 });
