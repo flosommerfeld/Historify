@@ -9,6 +9,8 @@ var options = {
 };
 
 
+
+
 function onError(error) { //log the error
   console.log(`Error: ${error}`);
 }
@@ -50,27 +52,33 @@ function onCaptured(screenshotUri) { //save the screenshot locally and get the J
 }
 
 function getMessage(message) { //gets a message to take screenshots from the content_script
-  url = message.url;
-  title = message.title;
-  hostname = message.hostname;
-  if (message.msg == "screenshot") { //if message says to take a screenshot
 
-    if (localStorage.getItem("screenshots_quality") == "low") { //initialize the image quality for the screenshot
-      imageQuality = 15;
-    } else if (localStorage.getItem("screenshots_quality") == "medium") {
-      imageQuality = 45;
-    } else {
-      imageQuality = 90;
-    }
+  browser.windows.getLastFocused().then((windowInfo) => {//check whether the last focused window is private
+      if (`${windowInfo.incognito}` == "false") {//if it's private -> continue
 
-    options = {
-      format: "jpeg",
-      quality: imageQuality
-    };
+        url = message.url;
+        title = message.title;
+        hostname = message.hostname;
+        if (message.msg == "screenshot") { //if message says to take a screenshot
 
-    var screenshot = browser.tabs.captureVisibleTab(options); //take the screenshot
-    screenshot.then(onCaptured, onError); //promise
-  }
+          if (localStorage.getItem("screenshots_quality") == "low") { //initialize the image quality for the screenshot
+            imageQuality = 15;
+          } else if (localStorage.getItem("screenshots_quality") == "medium") {
+            imageQuality = 45;
+          } else {
+            imageQuality = 90;
+          }
+
+          options = {
+            format: "jpeg",
+            quality: imageQuality
+          };
+
+          var screenshot = browser.tabs.captureVisibleTab(options); //take the screenshot
+          screenshot.then(onCaptured, onError); //promise
+        }
+      }
+  });
 }
 
 function getCurrentWindowTabs() { //get the tabs in the current window
@@ -119,6 +127,10 @@ function roughSizeOfObject(object) { //calculate the size of the JSON object whi
   return recurse(object);
 }
 
+
+
+
+//localStorage-Initialization
 if (localStorage.getItem("language") == null) { //language initialization
   localStorage.setItem("language", browser.i18n.getUILanguage());
 }
@@ -137,6 +149,8 @@ if (localStorage.getItem("autoclean_at") == null) { //autocleaner value initiali
 if (localStorage.getItem("screenshots_quality") == null) { //screenshot quality initialization
   localStorage.setItem("screenshots_quality", "medium");
 }
+
+
 
 
 browser.runtime.onMessage.addListener(getMessage); //listen to messages from the content_script
