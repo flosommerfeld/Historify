@@ -12,7 +12,7 @@
 * [Install Historify](https://addons.mozilla.org/en-US/firefox/addon/historify/)
 * [Learn to develop WebExtensions](https://developer.mozilla.org/en-US/Add-ons/WebExtensions)
 
-[![Mozilla Add-on](https://img.shields.io/badge/Status-Experimental-yellow.svg)](https://addons.mozilla.org/en-US/firefox/addon/historify/)   [![Mozilla Add-on](https://img.shields.io/badge/Version-1.3.1-yellow.svg)](https://addons.mozilla.org/en-US/firefox/addon/historify/)   [![Mozilla Add-on](https://img.shields.io/badge/Downloads-483-brightgreen.svg)](https://addons.mozilla.org/en-US/firefox/addon/historify/) 
+[![Mozilla Add-on](https://img.shields.io/badge/Status-Experimental-yellow.svg)](https://addons.mozilla.org/en-US/firefox/addon/historify/)   [![Mozilla Add-on](https://img.shields.io/badge/Version-1.4.0-yellow.svg)](https://addons.mozilla.org/en-US/firefox/addon/historify/)   [![Mozilla Add-on](https://img.shields.io/badge/Downloads-546-brightgreen.svg)](https://addons.mozilla.org/en-US/firefox/addon/historify/) 
 
 [![Download via Sourceforge](https://sourceforge.net/sflogo.php?type=16&group_id=2946390)](https://sourceforge.net/p/historify/)
 
@@ -50,21 +50,27 @@ You can just write a mail to help.flosommerfeld@gmail.com or get in contact with
 <br />
 <br />
 ## Version history
+__Version 1.4.0:__
+  The WebExtension is now available in various languages: English, German, Spanish, French, Japanese, Portuguese and Russian. Please be aware that some of the languages have been translated via a dictionary.
+
+  Recording the history in an incognito/private window is now disabled by default.
+
+  Once you've changed your settings, a message will appear to notify you that your changes have actually been applied.
+
 __Version 1.3.1:__
   Fixed a small CSS bug that appeared while scrolling through your history.
-  
+
 __Version 1.3.0:__
   Added support for mobile devices and removed remote sources to improve security.
-  
+
 __Version 1.2.7:__
-  Fixed the "Enable screenshots" checkbox so that Historify uses a standard placeholder image if you don't want screenshots to be taken. Before this fix the checkbox completely disabled new entries which were supposed to go into the history. 
-  
+  Fixed the "Enable screenshots" checkbox so that Historify uses a standard placeholder image if you don't want screenshots to be taken. Before this fix the checkbox completely disabled new entries which were supposed to go into the history.
+
 __Version 1.2.6:__
   Historify is now available for download on addons.mozilla.org!
-  
-  
-  
+
+
+
  ## License
 
 The contents of this repository are covered under the [Mozilla Public License 2.0](LICENSE).
-
