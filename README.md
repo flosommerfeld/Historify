@@ -10,7 +10,7 @@
 ### Finally a better history with images. Note: Still in development. - Mozilla Firefox WebExtension ###
 
 * [Install Historify](https://addons.mozilla.org/en-US/firefox/addon/historify/)
-* [Learn to develop WebExtensions](https://developer.mozilla.org/en-US/Add-ons/WebExtensions)
+* [Learn more about WebExtensions](https://developer.mozilla.org/en-US/Add-ons/WebExtensions)
 
 [![Mozilla Add-on](https://img.shields.io/badge/Status-Experimental-yellow.svg)](https://addons.mozilla.org/en-US/firefox/addon/historify/)   [![Mozilla Add-on](https://img.shields.io/badge/Version-1.4.0-yellow.svg)](https://addons.mozilla.org/en-US/firefox/addon/historify/)   [![Mozilla Add-on](https://img.shields.io/badge/Downloads-546-brightgreen.svg)](https://addons.mozilla.org/en-US/firefox/addon/historify/) 
 
