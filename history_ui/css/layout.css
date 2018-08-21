@@ -73,7 +73,7 @@ i {
 .side-button, .nav-wrapper a {
   outline: none;
   text-decoration: none !important;
-  font-size: 15px;
+  font-size: 0.8vw;
   cursor: default;
 }
 
