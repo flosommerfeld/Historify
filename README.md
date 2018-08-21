@@ -12,7 +12,7 @@
 * [Install Historify](https://addons.mozilla.org/en-US/firefox/addon/historify/)
 * [Learn to develop WebExtensions](https://developer.mozilla.org/en-US/Add-ons/WebExtensions)
 
-[![Mozilla Add-on](https://img.shields.io/badge/Status-Experimental-yellow.svg)](https://addons.mozilla.org/en-US/firefox/addon/historify/)   [![Mozilla Add-on](https://img.shields.io/badge/Version-1.4.0-yellow.svg)](https://addons.mozilla.org/en-US/firefox/addon/historify/)   [![Mozilla Add-on](https://img.shields.io/badge/Downloads-546-brightgreen.svg)](https://addons.mozilla.org/en-US/firefox/addon/historify/) 
+[![Mozilla Add-on](https://img.shields.io/badge/Status-Experimental-yellow.svg)](https://addons.mozilla.org/en-US/firefox/addon/historify/)   [![Mozilla Add-on](https://img.shields.io/badge/Version-1.4.1-yellow.svg)](https://addons.mozilla.org/en-US/firefox/addon/historify/)   [![Mozilla Add-on](https://img.shields.io/badge/Downloads-556-brightgreen.svg)](https://addons.mozilla.org/en-US/firefox/addon/historify/)
 
 [![Download via Sourceforge](https://sourceforge.net/sflogo.php?type=16&group_id=2946390)](https://sourceforge.net/p/historify/)
 
@@ -50,6 +50,9 @@ You can just write a mail to help.flosommerfeld@gmail.com or get in contact with
 <br />
 <br />
 ## Version history
+__Version 1.4.1:__
+  The text of the navigation tabs is now responsive. Furthermore a GitHub ribbon was added on some pages to advertise the projects GitHub page/repository.
+
 __Version 1.4.0:__
   The WebExtension is now available in various languages: English, German, Spanish, French, Japanese, Portuguese and Russian. Please be aware that some of the languages have been translated via a dictionary.
 

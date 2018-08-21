@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "__MSG_extensionName__",
   "permissions": ["storage", "tabs", "<all_urls>"],
-  "version": "1.4.0",
+  "version": "1.4.1",
 
   "description": "__MSG_extensionDescription__",
   "homepage_url": "https://github.com/flosommerfeld/Historify",
