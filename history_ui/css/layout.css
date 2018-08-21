@@ -17,10 +17,12 @@
   .active:hover {
     border-left-style: hidden;
   }
+
 }
 
 html {
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 * {
@@ -105,4 +107,33 @@ i {
 .active:hover {
   background-color: #1a2533;
   border-left: solid 4px #ff9500;
+}
+
+.ribbon{
+  position: absolute;
+  right: -42px;
+  transform: rotate(45deg);
+  top: 42px;
+  width: 200px;
+  max-height:24px;
+  padding: 1px 0;
+  background: #000;
+  color: #eee;
+  box-shadow: 0 0 4px rgba(0,0,0,0.2);
+}
+
+.ribbon a,
+.ribbon a:visited,
+.ribbon a:active,
+.ribbon a:hover{
+  display: block;
+  padding: 1px 0;
+  max-height: 24px;
+  line-height: 24px;
+  color: inherit;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  text-shadow: 0 0 10px rgba(0,0,0,0.31);
 }
